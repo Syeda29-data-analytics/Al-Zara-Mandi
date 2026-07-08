@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the finest Arabian Mandi in Frazer Town, Bangalore. Savor our slow-cooked mutton, smoked chicken madhbi, and traditional Kunafa. Direct order via WhatsApp!">
+    <meta name="keywords" content="Al Zara Mandi, Frazer Town, Bangalore, Mandi restaurant, Mutton Mandi, Chicken Madhbi, Arabian Food, Bangalore Mandi, Halal Food Frazer Town">
+    <title>Al Zara Mandi | Premium Arabic Restaurant, Frazer Town</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="main-header">
+        <nav class="nav-container">
+            <a href="#" class="logo" id="nav-logo">
+                <span class="logo-accent">Al Zara</span> Mandi
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">Our Story</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="cart-trigger" id="cart-trigger" aria-label="Open Order Tray">
+                    <i class="fa-solid fa-receipt"></i>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content">
+                <div class="badge-container animate-fade-in">
+                    <span class="hero-badge"><i class="fa-solid fa-star gold-star"></i> Legendary Taste of Yemen</span>
+                </div>
+                <h1 class="hero-title animate-slide-up">The Royal Mandi Experience in <span class="text-glow">Frazer Town</span></h1>
+                <p class="hero-subtitle animate-slide-up-delay">Savor slow-cooked mutton, smoked stone-grills, and aromatic basmati rice infused with traditional spices, cooked to perfection by our expert chefs.</p>
+                <div class="hero-cta animate-slide-up-delay-more">
+                    <a href="#menu" class="btn btn-primary" id="hero-btn-menu">Explore Menu <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#about" class="btn btn-secondary" id="hero-btn-about">Our Story</a>
+                </div>
+            </div>
+            
+            <!-- Quick Features -->
+            <div class="hero-features">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-fire"></i></div>
+                    <h3>Wood-Smoked</h3>
+                    <p>Authentic smoke flavor infused deep into the meat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-pepper-hot"></i></div>
+                    <h3>Yemeni Spices</h3>
+                    <p>Secret blend of traditional herbs imported from Yemen.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>WhatsApp Order</h3>
+                    <p>Fast and direct communication with our kitchen.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Royal Cuisine</span>
+                    <h2 class="section-title">Al Zara Delicacies</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Search & Filters Container -->
+                <div class="menu-controls">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="menu-search" placeholder="Search dish (e.g., Mutton, Kunafa, Spiced)..." aria-label="Search Mandi Dishes">
+                    </div>
+                    
+                    <div class="filter-tabs" id="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="mandi">Mandi Platter</button>
+                        <button class="filter-btn" data-filter="grill">Stone Grills</button>
+                        <button class="filter-btn" data-filter="dessert">Desserts</button>
+                    </div>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-grid" id="menu-grid">
+                    
+                    <!-- Dish 1: Signature Mutton Mandi -->
+                    <article class="menu-card" data-category="mandi" data-name="signature mutton mandi" id="dish-mutton-mandi">
+                        <div class="card-image-wrapper">
+                            <img src="images/mutton_mandi.png" alt="Signature Mutton Mandi" class="card-image" loading="lazy">
+                            <div class="card-tag special">Chef's Special</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="dish-rating"><i class="fa-solid fa-star"></i> 4.9 (240+)</span>
+                                <span class="spice-level text-spicy"><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+                            </div>
+                            <h3 class="dish-title">Signature Mutton Mandi</h3>
+                            <p class="dish-desc">Exquisite slow-cooked mutton shank over a massive bed of fragrant long-grain saffron and yellow basmati rice. Garnished with roasted almonds and raisins.</p>
+                            
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-currency">₹</span>
+                                    <span class="price-val">799</span>
+                                    <span class="price-portion">/ Full</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-tray" data-id="mutton-mandi" data-name="Signature Mutton Mandi" data-price="799" title="Add to Order Tray">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <a href="https://wa.me/919343123451?text=hi%20I%20would%20like%20to%20order%20Signature%20Mutton%20Mandi" target="_blank" class="btn btn-card-whatsapp" data-name="Signature Mutton Mandi" id="order-mutton-mandi">
+                                        <i class="fa-brands fa-whatsapp"></i> Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 2: Smoky Chicken Mandi -->
+                    <article class="menu-card" data-category="mandi" data-name="smoky chicken mandi" id="dish-chicken-mandi">
+                        <div class="card-image-wrapper">
+                            <img src="images/chicken_mandi.png" alt="Smoky Chicken Mandi" class="card-image" loading="lazy">
+                            <div class="card-tag trending">Best Seller</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="dish-rating"><i class="fa-solid fa-star"></i> 4.8 (380+)</span>
+                                <span class="spice-level text-mild"><i class="fa-solid fa-pepper-hot"></i> Mild</span>
+                            </div>
+                            <h3 class="dish-title">Smoky Chicken Mandi</h3>
+                            <p class="dish-desc">Tender, golden-brown roasted half chicken marinated in Middle Eastern spices, served on a bed of smoked basmati rice with spicy tomato salsa.</p>
+                            
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-currency">₹</span>
+                                    <span class="price-val">449</span>
+                                    <span class="price-portion">/ Full</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-tray" data-id="chicken-mandi" data-name="Smoky Chicken Mandi" data-price="449" title="Add to Order Tray">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <a href="https://wa.me/919343123451?text=hi%20I%20would%20like%20to%20order%20Smoky%20Chicken%20Mandi" target="_blank" class="btn btn-card-whatsapp" data-name="Smoky Chicken Mandi" id="order-chicken-mandi">
+                                        <i class="fa-brands fa-whatsapp"></i> Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 3: Al Zara Special Mixed Platter -->
+                    <article class="menu-card" data-category="mandi" data-name="al zara special mixed platter" id="dish-mixed-platter">
+                        <div class="card-image-wrapper">
+                            <img src="images/mixed_platter.png" alt="Al Zara Special Mixed Platter" class="card-image" loading="lazy">
+                            <div class="card-tag premium">Royal Platter</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="dish-rating"><i class="fa-solid fa-star"></i> 5.0 (150+)</span>
+                                <span class="spice-level text-spicy"><i class="fa-solid fa-pepper-hot"></i> Medium</span>
+                            </div>
+                            <h3 class="dish-title">Al Zara Mixed Platter</h3>
+                            <p class="dish-desc">A royal-sized family platter loaded with flavorful mandi rice, topped with a mix of tender slow-cooked mutton, barbecued chicken, and stone-grilled sheekh kebabs.</p>
+                            
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-currency">₹</span>
+                                    <span class="price-val">1599</span>
+                                    <span class="price-portion">/ Royal Size</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-tray" data-id="mixed-platter" data-name="Al Zara Mixed Platter" data-price="1599" title="Add to Order Tray">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <a href="https://wa.me/919343123451?text=hi%20I%20would%20like%20to%20order%20Al%20Zara%20Mixed%20Platter" target="_blank" class="btn btn-card-whatsapp" data-name="Al Zara Mixed Platter" id="order-mixed-platter">
+                                        <i class="fa-brands fa-whatsapp"></i> Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 4: Mutton Madhbi -->
+                    <article class="menu-card" data-category="grill" data-name="mutton madhbi" id="dish-mutton-madhbi">
+                        <div class="card-image-wrapper">
+                            <img src="images/mutton_madhbi.png" alt="Mutton Madhbi" class="card-image" loading="lazy">
+                            <div class="card-tag special">Stone Grilled</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="dish-rating"><i class="fa-solid fa-star"></i> 4.9 (110+)</span>
+                                <span class="spice-level text-extra-spicy"><i class="fa-solid fa-pepper-hot"></i> Spicy</span>
+                            </div>
+                            <h3 class="dish-title">Mutton Madhbi</h3>
+                            <p class="dish-desc">Succulent lamb cutlets seasoned in Yemeni spices and charcoal-grilled on basalt stones for a distinct woody smoke flavor. Served with yellow spiced mandi rice.</p>
+                            
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-currency">₹</span>
+                                    <span class="price-val">849</span>
+                                    <span class="price-portion">/ Full</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-tray" data-id="mutton-madhbi" data-name="Mutton Madhbi" data-price="849" title="Add to Order Tray">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <a href="https://wa.me/919343123451?text=hi%20I%20would%20like%20to%20order%20Mutton%20Madhbi" target="_blank" class="btn btn-card-whatsapp" data-name="Mutton Madhbi" id="order-mutton-madhbi">
+                                        <i class="fa-brands fa-whatsapp"></i> Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 5: Chicken Kabsa -->
+                    <article class="menu-card" data-category="grill" data-name="chicken kabsa" id="dish-chicken-kabsa">
+                        <div class="card-image-wrapper">
+                            <img src="images/chicken_kabsa.png" alt="Traditional Chicken Kabsa" class="card-image" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="dish-rating"><i class="fa-solid fa-star"></i> 4.7 (95+)</span>
+                                <span class="spice-level text-mild"><i class="fa-solid fa-pepper-hot"></i> Mild</span>
+                            </div>
+                            <h3 class="dish-title">Chicken Kabsa</h3>
+                            <p class="dish-desc">A deep, aromatic plate of long-grain rice slow-cooked in a rich tomato, cinnamon, and cardamom broth, topped with a tender roasted chicken quarter.</p>
+                            
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-currency">₹</span>
+                                    <span class="price-val">429</span>
+                                    <span class="price-portion">/ Full</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-tray" data-id="chicken-kabsa" data-name="Chicken Kabsa" data-price="429" title="Add to Order Tray">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <a href="https://wa.me/919343123451?text=hi%20I%20would%20like%20to%20order%20Chicken%20Kabsa" target="_blank" class="btn btn-card-whatsapp" data-name="Chicken Kabsa" id="order-chicken-kabsa">
+                                        <i class="fa-brands fa-whatsapp"></i> Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 6: Pistachio Kunafa -->
+                    <article class="menu-card" data-category="dessert" data-name="pistachio kunafa" id="dish-kunafa">
+                        <div class="card-image-wrapper">
+                            <img src="images/kunafa.png" alt="Pistachio Kunafa" class="card-image" loading="lazy">
+                            <div class="card-tag premium">Authentic Dessert</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="dish-rating"><i class="fa-solid fa-star"></i> 4.9 (420+)</span>
+                                <span class="spice-level text-sweet"><i class="fa-solid fa-cookie"></i> Sweet</span>
+                            </div>
+                            <h3 class="dish-title">Pistachio Kunafa</h3>
+                            <p class="dish-desc">Crispy spun shredded pastry soaked in sweet syrup, layered with gooey melted cheese, and lavishly covered with crushed green pistachios.</p>
+                            
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-currency">₹</span>
+                                    <span class="price-val">299</span>
+                                    <span class="price-portion">/ Small Pan</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn-add-tray" data-id="kunafa" data-name="Pistachio Kunafa" data-price="299" title="Add to Order Tray">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <a href="https://wa.me/919343123451?text=hi%20I%20would%20like%20to%20order%20Pistachio%20Kunafa" target="_blank" class="btn btn-card-whatsapp" data-name="Pistachio Kunafa" id="order-kunafa">
+                                        <i class="fa-brands fa-whatsapp"></i> Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story (About Us) Section -->
+        <section class="about-section" id="about">
+            <div class="about-glow-orb"></div>
+            <div class="container about-grid">
+                <div class="about-info">
+                    <span class="section-subtitle">Since 2018</span>
+                    <h2 class="section-title">Authentic Wood-Smoke Mandi In Frazer Town</h2>
+                    <p class="about-p">Located in the heart of Bangalore's food paradise, **Frazer Town**, Al Zara Mandi brings the true royal heritage of Yemeni cuisine to your plate. Our chefs follow the traditional *Taboon* cooking method, where marinated meat is slow-cooked over wood fire inside a deep underground clay oven, allowing the meat to absorb smoke and natural spices until it slides off the bone.</p>
+                    <p class="about-p">We select only premium long-grain Basmati rice, seasoned with real cardamom, cloves, and black lime, ensuring a burst of flavor in every bite. Experience the communal dining culture of the Middle East right here in Bengaluru.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4.8★</span>
+                            <span class="stat-label">Google Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20K+</span>
+                            <span class="stat-label">Platters Served</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Halal Ingredients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <i class="fa-solid fa-utensils visual-icon"></i>
+                        <h3>The Art of Mandi</h3>
+                        <p>Unlike standard biryani, Mandi relies on high-pressure meat steam dripping flavor directly onto the rice below, making the rice exceptionally rich and buttery.</p>
+                    </div>
+                    <div class="visual-deco-box"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Testimonials</span>
+                    <h2 class="section-title">What Our Guests Say</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4 class="user-name">Mohammed R.</h4>
+                                <span class="review-date">Local Guide • Frazer Town</span>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Al Zara has hands down the best Mutton Mandi in Frazer Town. The meat is extremely tender, literally melts in your mouth! The rice has that authentic smoky woody flavor. Kunafa was super fresh too."</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4 class="user-name">Sneha K.</h4>
+                                <span class="review-date">Food Critic</span>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Love the premium vibe. The dark theme of the place is very ambient. Ordering on WhatsApp was incredibly convenient, we clicked the button and got our order confirmed within a minute!"</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4 class="user-name">Salman Faris</h4>
+                                <span class="review-date">Regular Patron</span>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"The Special Mixed Mandi platter is massive, easily feeds 4-5 hungry people. The stone-grilled Madhbi mutton was smoky and cooked perfectly. Definitely a weekly spot for my family."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Visit the Kingdom of Mandi</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Our Address</h4>
+                                <p>Coles Road, Near Frazer Town Park, Bengaluru, Karnataka 560005</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Everyday: 12:00 PM – 12:00 AM (Midnight)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Phone & WhatsApp</h4>
+                                <p>+91 93431 23451 (For reservations & home orders)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/919343123451" target="_blank" aria-label="WhatsApp Restaurant Account"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-card-glow"></div>
+                    <div class="map-placeholder">
+                        <i class="fa-solid fa-map-location-dot map-icon"></i>
+                        <h3>Located in Coles Road, Frazer Town</h3>
+                        <p>Click below to open in Google Maps</p>
+                        <a href="https://maps.google.com/?q=Al+Zara+Mandi+Frazer+Town+Bangalore" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-location-arrow"></i> Open Map</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Al Zara Mandi Restaurant. All Rights Reserved. Crafted with <i class="fa-solid fa-heart heart-pulse"></i> for Frazer Town Foodies.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Order Tray (WhatsApp Multi-Item Cart) -->
+    <div class="order-tray-drawer" id="order-tray-drawer">
+        <div class="drawer-header">
+            <h3><i class="fa-solid fa-receipt gold-icon"></i> Your Order Tray</h3>
+            <button class="drawer-close" id="drawer-close" aria-label="Close Order Tray">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="drawer-content">
+            <!-- Empty state -->
+            <div class="tray-empty" id="tray-empty">
+                <i class="fa-solid fa-utensils tray-empty-icon"></i>
+                <p>Your order tray is empty. Add delicious items from our menu above!</p>
+            </div>
+            
+            <!-- Items list -->
+            <div class="tray-items-list" id="tray-items-list">
+                <!-- Dynamically generated items go here -->
+            </div>
+        </div>
+        <div class="drawer-footer" id="drawer-footer">
+            <div class="tray-summary">
+                <span class="summary-label">Estimated Total:</span>
+                <span class="summary-total" id="summary-total">₹0</span>
+            </div>
+            <button class="btn btn-whatsapp-order-total" id="btn-whatsapp-order-total">
+                <i class="fa-brands fa-whatsapp"></i> Send Order on WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Mobile Action Bar (shows when items are in tray) -->
+    <div class="floating-mobile-bar" id="floating-mobile-bar">
+        <div class="mobile-bar-info">
+            <span class="mobile-bar-count" id="mobile-bar-count">0 items</span>
+            <span class="mobile-bar-price" id="mobile-bar-price">₹0</span>
+        </div>
+        <button class="btn btn-mobile-checkout" id="btn-mobile-checkout">
+            View Tray <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>

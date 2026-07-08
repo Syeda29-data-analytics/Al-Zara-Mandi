@@ -1,0 +1,16 @@
+{
+  "name": "al-zara-mandi-frazer-town",
+  "version": "1.0.0",
+  "description": "Premium restaurant website for Al Zara Mandi in Frazer Town, featuring WhatsApp ordering",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server -p 3000 -c-1"
+  },
+  "keywords": [
+    "mandi",
+    "restaurant",
+    "whatsapp-order"
+  ],
+  "author": "",
+  "license": "ISC"
+}
